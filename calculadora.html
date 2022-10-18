@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora</title>
+    <script src="./calculator.js" defer></script>
+    <style>
+        body{
+            font-family: sans-serif;
+            text-align: center;
+            background-color: rgb(175, 241, 219);
+        }
+        #titulo{
+            font-size: 60px;
+            font-style: italic;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .op{
+            box-shadow: 2px 2px 5px rgba(0,0,0,5);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1 id="titulo">Calculadora basica</h1><br>
+
+    <form action="" method="dialog">
+        <label for="operando">Operando 1: </label>
+        <input class="op" type="number" id="operando1" placeholder="Ingrese un número" /><br><br>
+
+        <label for="operador">Operador: </label>
+        <input class="op" type="text" id="operador" placeholder="+, -, *, /" /><br><br>
+
+        <label for="operando">Operando 2: </label>
+        <input class="op" type="number" id="operando2" placeholder="Ingrese un número" /><br><br>
+
+        <input type="submit" value="Calcular" id="calcular" />
+
+        <p id="resultado"></p>
+    </form>
+
+</body>
+
+</html>
